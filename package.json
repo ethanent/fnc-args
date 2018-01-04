@@ -1,0 +1,37 @@
+{
+  "name": "fnc-args",
+  "version": "1.0.0",
+  "description": "Get a function's arguments in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Tested before deployment.\" && exit 0",
+    "test-dev": "node test.js",
+    "prepublishOnly": "npm run test-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanent/fnc-args.git"
+  },
+  "keywords": [
+    "function",
+    "arguments",
+    "function-args",
+    "function-arguments",
+    "arrow",
+    "async",
+    "function"
+  ],
+  "author": "Ethan Davis",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/ethanent/fnc-args/issues"
+  },
+  "files": [
+    "index.js",
+    "LICENSE.md"
+  ],
+  "homepage": "https://github.com/ethanent/fnc-args#readme",
+  "devDependencies": {
+    "whew": "^1.1.3"
+  }
+}

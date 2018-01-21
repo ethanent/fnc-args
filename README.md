@@ -19,4 +19,6 @@ fncArgs((hey, hi) => {}) // ['hey', 'hi']
 fncArgs(function (hey, hi) {}) // ['hey', 'hi']
 
 fncArgs(async (hey, hi) => {}) // ['hey', 'hi']
+
+fncArgs(hey => {}) // ['hey']
 ```

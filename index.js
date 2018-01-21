@@ -1,1 +1,1 @@
-module.exports = (fnc) => fnc.toString().match(/\((.*)\)/)[1].split(/, */).filter((arg) => arg !== '').map((arg) => arg.replace(/\/\*.*\*\//, ''))
+module.exports = (fnc) => fnc.toString().match(/(?:\((.*)\))|(?:([^ ]*) *\=\>)/).slice(1, 3).find((capture) => typeof capture === 'string').split(/, */).filter((arg) => arg !== '').map((arg) => arg.replace(/\/\*.*\*\//, ''))
